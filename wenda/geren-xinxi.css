@@ -1,0 +1,60 @@
+
+/*内容*/
+body { padding-top:30px; }
+.widget .panel-body { padding:0px; }
+.widget .list-group { margin-bottom: 0; }
+.widget .panel-title { display:inline }
+.widget .label-info { float: right; }
+.widget li.list-group-item {border-radius: 0;border: 0;border-top: 1px solid #ddd;}
+.widget li.list-group-item:hover { background-color: rgba(86,61,124,.1); }
+.widget .mic-info { color: #666666;font-size: 11px; }
+.widget .action { margin-top:5px; }
+.widget .comment-text { font-size: 12px; }
+.widget .btn-block { border-top-left-radius:0px;border-top-right-radius:0px; }
+
+
+/*头像  粉丝/关注 绑定*/
+
+
+
+
+
+.padding-none{
+	padding: 1px 10px;
+}
+
+.afollow{
+	border: 1px solid #44326C;
+	margin-top: 12px;
+
+}
+.afollow ul{
+	text-align: center;
+	margin: 1px auto;
+
+}
+
+.afollow ul li{
+	display: inline-block;
+	float: none
+}
+
+/*表2*/
+.oaerror {
+  
+  margin: 0 auto; /* Centering Stuff */
+ 
+  border-bottom:   1px solid #CECECE;
+  border-radius: 3px;
+  
+ 
+  
+}
+.change{
+	padding: 10px 6px;
+
+}
+.bord-none{
+	border: none;
+	text-align: center;
+}
