@@ -13,7 +13,8 @@
     		font-size: 16px;
     		padding: 0;
     		margin: 0;
-    		background: url('./public/images/bodybg.jpg');
+    		background-color: #f6f6f6;
+    		/*background: url('./public/images/bodybg.jpg');*/
     	}
     	.jianjie{
     		height: 290px;
@@ -124,33 +125,268 @@
 
 		<!-- 个人内容部分 -->
 		<div class="col-md-9 pos ">
+			<!-- 表1 -->
+			
+			<!-- 我的主页 -->
 			<div id="index">
-				<!-- 表1 -->
-				<div  style="border: 1px solid red;" class="body-head  pos ">
-					<ul class=" nav  nav-tabs"  >
-						<li role="presentation"  ><a href="#">Home
-							 <!-- <span class="badge">42</span> -->
-						</a></li>
-						<li role="presentation"  ><a href="#">Home</a></li>
-						<li role="presentation" ><a href="#">Home</a></li>
-						<li role="presentation" ><a href="#">Home </a></li>
-					</ul>
-				</div>
-				
-				<!-- 内容 -->
-				<div class="pos" >
-					<div style="border: 1px solid blue;margin-top: 10px;">
-						<h1>标题</h1>
-						<label></label>
-						<span>标识</span>
-						<div>内容</div>	
+					<nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+						<div class="container-fluid"> 
+
+							<!-- <div class="navbar-header">
+								<button class="navbar-toggle" type="button" data-toggle="collapse" 
+										data-target=".bs-js-navbar-scrollspy">
+									<span class="sr-only">切换导航</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#">教程名称</a>
+							</div> -->
+							
+							<div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+								<ul class="nav navbar-nav ind-head" >
+									<li><a href="#gr">个人档案</a></li>
+									<li><a href="#gz">工作经历</a></li>
+									<!-- <li class="dropdown">
+										<a href="#" id="navbarDrop1" class="dropdown-toggle" 
+										   data-toggle="dropdown">Java
+											<b class="caret"></b>
+										</a>
+										<ul class="dropdown-menu" role="menu" 
+											aria-labelledby="navbarDrop1">
+											<li><a href="#jmeter" tabindex="-1">jmeter</a></li>
+											<li><a href="#ejb" tabindex="-1">ejb</a></li>
+											<li class="divider"></li>
+											<li><a href="#spring" tabindex="-1">spring</a></li>
+										</ul>
+									</li> -->
+									<li><a href="#jl">教育经历</a></li>
+
+									<li><a href="#ky">开源项目&文章著作</a></li>
+								</ul>
+							</div>
+						</div> 
+					</nav>
+					<div data-spy="scroll" data-target="#navbar-example" data-offset="0" 
+						id="wdow">
+						 	<!-- 主页窗口1 -->
+						 	
+						 	<div style="" class="pos wdow-di">
+						 		<div class="wdow-t"  id="gr"> 个人档</div>
+						 		<div class="wdow-n">
+
+								 	<div class="wdow-n-one" class="pos">
+								 		  <div class=" d-sp" >
+										  	<div class="fon-cor" ><span>真实姓名</span></div>
+										  	<div><span>才怪</span></div>
+									 	  </div>
+										  <div class="d-sp" >
+										  	<div class="fon-cor"><span>性别</span></div>
+										  	<div><span>男</span></div>
+										  </div>
+										  <div class="d-sp">
+										  	<div class="fon-cor"><span>出生日期</span></div>
+										  	<div><span>date</span></div>
+										  </div>
+										  <div class="d-sp">
+										  	<div class="fon-cor"><span>手机号码</span></div>
+										  	<div><span>666666</span></div>
+										  </div>
+										  <div class="d-sp">
+										  	<div class="fon-cor"><span>Email</span></div>
+										  	<div><span>110@qq.com</span></div>
+										  </div>
+										  <div class="d-sp">
+										  	<div class="fon-cor"><span>现居住地</span></div>
+										  	<div><span>天堂</span></div>
+										  </div>
+									</div>
+								  	<div class="pos wdow-n-two">
+								  		<div>个人履历</div>
+								  	</div>
+							  		<div  class="pos wdow-n-two ">
+							  			<div>擅长技术</div>
+							  		</div>
+							  		<div>
+										<form>
+											  <div class="form-group">
+											    <label for="exampleInputEmail1">Email address</label>
+											    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+									
+											  </div>
+											  <div class="form-group">
+											    <label for="exampleInputPassword1">Password</label>
+											    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+											  </div>
+											  <div class="form-group">
+											    <label for="exampleInputFile">File input</label>
+											    <input type="file" id="exampleInputFile">
+											    <p class="help-block">Example block-level help text here.</p>
+											  </div>
+											  <div class="checkbox">
+											    <label>
+											      <input type="checkbox"> Check me out
+											    </label>
+											  </div>
+											  <button type="submit" class="btn btn-default">Submit</button>
+										</form>
+									</div>
+								</div>
+								
+						 	</div>
+						 	
+						 	<div class="wdow-di" id="gz">
+						 		<div  class="wdow-t">工作经历</div>
+						 		<div class="wdow-n">
+
+								  	
+							  		<div  class="pos wdow-n-strry">
+							  			<div><a href="">添加工作经历</a></div>
+							  		</div>
+							  		<div>
+										<form>
+											<div class="form-group">
+											    <label for="exampleInputEmail1">Email address</label>
+											    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+											</div>
+										</form>
+									</div>
+								</div>
+								
+						 	</div>
+						 	
+						 	<div class="wdow-di" id="ky">
+						 		<div class="wdow-t">开源项目 & 文章著作	</div>
+						 		<div class="wdow-n">
+
+								  	
+							  	<div  class="pos wdow-n-strry">
+							  			<div><a href="">添加开源项目、文章著作</a></div>
+							  		</div>
+							  
+								</div>
+						 	</div>
+						 	<div class="wdow-di" id="jl">
+						 		<div class="wdow-t" >教育经历</div>
+						 		<div class="wdow-n">
+
+								  	
+							  	<div  class="pos wdow-n-strry">
+							  			<div><a href="">添加教育经历</a></div>
+							  		</div>
+							  
+								</div>
+						 	</div>
+							<div class="change"></div>
+
 					</div>
-					<div style="border: 1px solid blue;margin-top: 10px;">
-						<h1>标题</h1>
-						<label></label>
-						<span>标识</span>
-						<div>内容</div>	
-					</div>
+			</div>
+
+			<!-- 我的问题 -->
+			<div id="index2">
+				<ul class="list-group">
+	                    <li class="list-group-item">
+	                        <div class="row">
+	                            <div class="col-xs-2 col-md-1">
+	                               <img src="http://placehold.it/80" class="img-circle img-responsive" alt="" />
+	                               </div>
+	                            <div class="col-xs-10 col-md-11">
+	                                <div>
+	                                    <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
+	                                      	 <h3>问题1</h3>
+	                                      </a>
+	                                    <div class="mic-info">
+	                                        提问时间：<a href="#">666</a> 
+	                                        回答人数：<a href="">66</a>
+	                                    </div>
+	                                </div>
+	                                <div class="comment-text">
+	                                    内容
+	                                </div>
+	                                <div class="action">
+	                                    <button type="button" class="btn btn-primary btn-xs" title="修改">
+	                                        <span class="glyphicon glyphicon-pencil"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-success btn-xs" title="已采纳">
+	                                        <span class="glyphicon glyphicon-ok"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-danger btn-xs" title="删除">
+	                                        <span class="glyphicon glyphicon-trash"></span>
+	                                    </button>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="list-group-item">
+	                        <div class="row">
+	                            <div class="col-xs-2 col-md-1">
+	                               <img src="http://placehold.it/80" class="img-circle img-responsive" alt="" />
+	                               </div>
+	                            <div class="col-xs-10 col-md-11">
+	                                <div>
+	                                    <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
+	                                      	 <h3>问题2</h3>
+	                                      </a>
+	                                    <div class="mic-info">
+	                                        提问时间：<a href="#">666</a> 
+	                                        回答人数：<a href="">66</a>
+	                                    </div>
+	                                </div>
+	                                <div class="comment-text">
+	                                    内容
+	                                </div>
+	                                <div class="action">
+	                                    <button type="button" class="btn btn-primary btn-xs" title="修改">
+	                                        <span class="glyphicon glyphicon-pencil"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-success btn-xs" title="已采纳">
+	                                        <span class="glyphicon glyphicon-ok"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-danger btn-xs" title="删除">
+	                                        <span class="glyphicon glyphicon-trash"></span>
+	                                    </button>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="list-group-item">
+	                        <div class="row">
+	                            <div class="col-xs-2 col-md-1">
+	                               <img src="http://placehold.it/80" class="img-circle img-responsive" alt="" />
+	                               </div>
+	                            <div class="col-xs-10 col-md-11">
+	                                <div>
+	                                    <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
+	                                      	 <h3>问题3</h3>
+	                                      </a>
+	                                    <div class="mic-info">
+	                                        提问时间：<a href="#">666</a> 
+	                                        回答人数：<a href="">66</a>
+	                                    </div>
+	                                </div>
+	                                <div class="comment-text">
+	                                    内容
+	                                </div>
+	                                <div class="action">
+	                                    <button type="button" class="btn btn-primary btn-xs" title="修改">
+	                                        <span class="glyphicon glyphicon-pencil"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-success btn-xs" title="已采纳">
+	                                        <span class="glyphicon glyphicon-ok"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-danger btn-xs" title="删除">
+	                                        <span class="glyphicon glyphicon-trash"></span>
+	                                    </button>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                </ul>
+
+			</div>
+			<!-- 我的收藏 -->
+			<div id="index3">
+				<div style="pos">
 					<ul class="list-group">
 	                    <li class="list-group-item">
 	                        <div class="row">
@@ -159,24 +395,66 @@
 	                            <div class="col-xs-10 col-md-11">
 	                                <div>
 	                                    <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
-	                                        Google Style Login Page Design Using Bootstrap</a>
+	                                       <h3>收藏的问题1</h3>
+	                                       </a>
 	                                    <div class="mic-info">
-	                                        By: <a href="#">Bhaumik Patel</a> on 2 Aug 2013
+	                                        收藏时间：<a href="#">666</a>
+	                                        采纳人名：<a href="">呵呵</a>
 	                                    </div>
 	                                </div>
 	                                <div class="comment-text">
-	                                    Awesome design
+	                                   问题内容
+	                                </div><br>
+	                                <div class="comment-text">
+	                                   回答内容
 	                                </div>
 	                                <div class="action">
-	                                    <button type="button" class="btn btn-primary btn-xs" title="Edit">
+	                                     <div class="action">
+	                                    <button type="button" class="btn btn-primary btn-xs" title="修改">
 	                                        <span class="glyphicon glyphicon-pencil"></span>
 	                                    </button>
-	                                    <button type="button" class="btn btn-success btn-xs" title="Approved">
+	                                    <button type="button" class="btn btn-success btn-xs" title="已采纳">
 	                                        <span class="glyphicon glyphicon-ok"></span>
 	                                    </button>
-	                                    <button type="button" class="btn btn-danger btn-xs" title="Delete">
+	                                    <button type="button" class="btn btn-danger btn-xs" title="删除">
 	                                        <span class="glyphicon glyphicon-trash"></span>
 	                                    </button>
+	                                </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                   <li class="list-group-item">
+	                        <div class="row">
+	                            <div class="col-xs-2 col-md-1">
+	                                <img src="http://placehold.it/80" class="img-circle img-responsive" alt="" /></div>
+	                            <div class="col-xs-10 col-md-11">
+	                                <div>
+	                                    <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
+	                                         <h3>收藏的问题1</h3></a>
+	                                    <div class="mic-info">
+	                                        收藏时间：<a href="#">666</a>
+	                                        采纳人名：<a href="">呵呵</a>
+	                                    </div>
+	                                </div>
+	                                <div class="comment-text">
+	                                   问题内容
+	                                </div><br>
+	                                <div class="comment-text">
+	                                   回答内容
+	                                </div>
+	                                <div class="action">
+	                                     <div class="action">
+	                                    <button type="button" class="btn btn-primary btn-xs" title="修改">
+	                                        <span class="glyphicon glyphicon-pencil"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-success btn-xs" title="已采纳">
+	                                        <span class="glyphicon glyphicon-ok"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-danger btn-xs" title="删除">
+	                                        <span class="glyphicon glyphicon-trash"></span>
+	                                    </button>
+	                                </div>
 	                                </div>
 	                            </div>
 	                        </div>
@@ -187,133 +465,331 @@
 	                                <img src="http://placehold.it/80" class="img-circle img-responsive" alt="" /></div>
 	                            <div class="col-xs-10 col-md-11">
 	                                <div>
-	                                    <a href="http://bootsnipp.com/BhaumikPatel/snippets/Obgj">Admin Panel Quick Shortcuts</a>
+	                                    <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
+	                                         <h3>收藏的问题1</h3></a>
 	                                    <div class="mic-info">
-	                                        By: <a href="#">Bhaumik Patel</a> on 11 Nov 2013
+	                                        收藏时间：<a href="#">666</a>
+	                                        采纳人名：<a href="">呵呵</a>
 	                                    </div>
 	                                </div>
 	                                <div class="comment-text">
-	                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-	                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
-	                                </div>
-	                                <div class="action">
-	                                    <button type="button" class="btn btn-primary btn-xs" title="Edit">
-	                                        <span class="glyphicon glyphicon-pencil"></span>
-	                                    </button>
-	                                    <button type="button" class="btn btn-success btn-xs" title="Approved">
-	                                        <span class="glyphicon glyphicon-ok"></span>
-	                                    </button>
-	                                    <button type="button" class="btn btn-danger btn-xs" title="Delete">
-	                                        <span class="glyphicon glyphicon-trash"></span>
-	                                    </button>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </li>
-	                    <li class="list-group-item">
-	                        <div class="row">
-	                            <div class="col-xs-2 col-md-1">
-	                                <img src="http://placehold.it/80" class="img-circle img-responsive" alt="" /></div>
-	                            <div class="col-xs-10 col-md-11">
-	                                <div>
-	                                    <a href="http://bootsnipp.com/BhaumikPatel/snippets/4ldn">Cool Sign Up</a>
-	                                    <div class="mic-info">
-	                                        By: <a href="#">Bhaumik Patel</a> on 11 Nov 2013
-	                                    </div>
-	                                </div>
+	                                   问题内容
+	                                </div><br>
 	                                <div class="comment-text">
-	                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-	                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
+	                                   回答内容
 	                                </div>
 	                                <div class="action">
-	                                    <button type="button" class="btn btn-primary btn-xs" title="Edit">
+	                                     <div class="action">
+	                                    <button type="button" class="btn btn-primary btn-xs" title="修改">
 	                                        <span class="glyphicon glyphicon-pencil"></span>
 	                                    </button>
-	                                    <button type="button" class="btn btn-success btn-xs" title="Approved">
+	                                    <button type="button" class="btn btn-success btn-xs" title="已采纳">
 	                                        <span class="glyphicon glyphicon-ok"></span>
 	                                    </button>
-	                                    <button type="button" class="btn btn-danger btn-xs" title="Delete">
+	                                    <button type="button" class="btn btn-danger btn-xs" title="删除">
 	                                        <span class="glyphicon glyphicon-trash"></span>
 	                                    </button>
+	                                </div>
 	                                </div>
 	                            </div>
 	                        </div>
 	                    </li>
 	                </ul>
+	                 <div class="col col-xs-8">
+	                    <ul class="pagination hidden-xs pull-right">
+	                      <li><a href="#">1</a></li>
+	                      <li><a href="#">2</a></li>
+	                      <li><a href="#">3</a></li>
+	                      <li><a href="#">4</a></li>
+	                      <li><a href="#">5</a></li>
+	                    </ul>
+	                    <ul class="pagination visible-xs pull-right">
+	                        <li><a href="#">«</a></li>
+	                        <li><a href="#">»</a></li>
+	                    </ul>
+                 	 </div>
+				</div>
+				
+	                
+			</div>
+
+			<!-- 我的回答 -->
+			<div id="index4">
+				<div style="pos">
+					<ul class="list-group">
+	                    <li class="list-group-item">
+	                        <div class="row">
+	                            <div class="col-xs-2 col-md-1">
+	                                <img src="http://placehold.it/80" class="img-circle img-responsive" alt="" /></div>
+	                            <div class="col-xs-10 col-md-11">
+	                                <div>
+	                                    <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
+	                                       <h3>回答的问题</h3>
+	                                       </a>
+	                                    <div class="mic-info">
+	                                        回答时间：<a href="#">666</a>
+	                                        点赞：<a href="">爆炸</a>
+	                                    </div>
+	                                </div>
+	                                <div class="comment-text">
+	                                   问题内容
+	                                </div><br>
+	                                <div class="comment-text">
+	                                   回答内容
+	                                </div>
+	                                <div class="action">
+	                                     <div class="action">
+	                                     <!--   <button type="button" class="btn btn-primary btn-xs" title="修改">
+	                                        <span class="glyphicon glyphicon-pencil"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-success btn-xs" title="已采纳">
+	                                        <span class="glyphicon glyphicon-ok"></span>
+	                                    </button> -->
+	                                    <button type="button" class="btn btn-danger btn-xs" title="删除记录">
+	                                        <span class="glyphicon glyphicon-trash"></span>
+	                                    </button>
+	                                    
+	                                </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                  <li class="list-group-item">
+	                        <div class="row">
+	                            <div class="col-xs-2 col-md-1">
+	                                <img src="http://placehold.it/80" class="img-circle img-responsive" alt="" /></div>
+	                            <div class="col-xs-10 col-md-11">
+	                                <div>
+	                                    <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
+	                                       <h3>回答的问题</h3>
+	                                       </a>
+	                                    <div class="mic-info">
+	                                        回答时间：<a href="#">666</a>
+	                                        点赞：<a href="">爆炸</a>
+	                                    </div>
+	                                </div>
+	                                <div class="comment-text">
+	                                   问题内容
+	                                </div><br>
+	                                <div class="comment-text">
+	                                   回答内容
+	                                </div>
+	                                <div class="action">
+	                                     <div class="action">
+	                                     <!--   <button type="button" class="btn btn-primary btn-xs" title="修改">
+	                                        <span class="glyphicon glyphicon-pencil"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-success btn-xs" title="已采纳">
+	                                        <span class="glyphicon glyphicon-ok"></span>
+	                                    </button> -->
+	                                    <button type="button" class="btn btn-danger btn-xs" title="删除记录">
+	                                        <span class="glyphicon glyphicon-trash"></span>
+	                                    </button>
+	                                </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                   <li class="list-group-item">
+	                        <div class="row">
+	                            <div class="col-xs-2 col-md-1">
+	                                <img src="http://placehold.it/80" class="img-circle img-responsive" alt="" /></div>
+	                            <div class="col-xs-10 col-md-11">
+	                                <div>
+	                                    <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
+	                                       <h3>回答的问题</h3>
+	                                       </a>
+	                                    <div class="mic-info">
+	                                        回答时间：<a href="#">666</a>
+	                                        点赞：<a href="">爆炸</a>
+	                                    </div>
+	                                </div>
+	                                <div class="comment-text">
+	                                   问题内容
+	                                </div><br>
+	                                <div class="comment-text">
+	                                   回答内容
+	                                </div>
+	                                <div class="action">
+	                                     <div class="action">
+	                                  <!--   <button type="button" class="btn btn-primary btn-xs" title="修改">
+	                                        <span class="glyphicon glyphicon-pencil"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-success btn-xs" title="已采纳">
+	                                        <span class="glyphicon glyphicon-ok"></span>
+	                                    </button> -->
+	                                    <button type="button" class="btn btn-danger btn-xs" title="删除记录">
+	                                        <span class="glyphicon glyphicon-trash"></span>
+	                                    </button>
+	                                </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                </ul>
+	                 <div class="col col-xs-8">
+	                    <ul class="pagination hidden-xs pull-right">
+	                      <li><a href="#">1</a></li>
+	                      <li><a href="#">2</a></li>
+	                      <li><a href="#">3</a></li>
+	                      <li><a href="#">4</a></li>
+	                      <li><a href="#">5</a></li>
+	                    </ul>
+	                    <ul class="pagination visible-xs pull-right">
+	                        <li><a href="#">«</a></li>
+	                        <li><a href="#">»</a></li>
+	                    </ul>
+                 	 </div>
 				</div>
 			</div>
-			<div id="index2">
-					<nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
-		<div class="container-fluid"> 
 
-			<div class="navbar-header">
-				<button class="navbar-toggle" type="button" data-toggle="collapse" 
-						data-target=".bs-js-navbar-scrollspy">
-					<span class="sr-only">切换导航</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">教程名称</a>
+			<!-- 我的分享 -->
+			<div id="index5">
+					
+				<div style="pos">
+					<ul class="list-group">
+	                    <li class="list-group-item">
+	                        <div class="row">
+	                            <div class="col-xs-2 col-md-1">
+	                                <img src="http://placehold.it/80" class="img-circle img-responsive" alt="" /></div>
+	                            <div class="col-xs-10 col-md-11">
+	                                <div>
+	                                    <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
+	                                       <h3>问题</h3>
+	                                       </a>
+	                                    <div class="mic-info">
+	                                        发布时间：<a href="#">666</a>
+	                                        点赞数：<a href="">爆炸</a>
+	                                    </div>
+	                                </div>
+	                                
+	                                 <div class="comment-text">
+	                                   问题内容
+	                                </div>
+	                                <div class="comment-text">
+	                                   回答
+	                                </div>
+	                                <div class="action">
+	                                     <div class="action">
+	                                       <button type="button" class="btn btn-primary btn-xs" title="修改">
+	                                        <span class="glyphicon glyphicon-pencil"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-success btn-xs" title="已采纳">
+	                                        <span class="glyphicon glyphicon-ok"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-danger btn-xs" title="删除记录">
+	                                        <span class="glyphicon glyphicon-trash"></span>
+	                                    </button>
+	                                    
+	                                </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                 <li class="list-group-item">
+	                        <div class="row">
+	                            <div class="col-xs-2 col-md-1">
+	                                <img src="http://placehold.it/80" class="img-circle img-responsive" alt="" /></div>
+	                            <div class="col-xs-10 col-md-11">
+	                                <div>
+	                                    <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
+	                                       <h3>问题</h3>
+	                                       </a>
+	                                    <div class="mic-info">
+	                                        发布时间：<a href="#">666</a>
+	                                        点赞数：<a href="">爆炸</a>
+	                                    </div>
+	                                </div>
+	                                
+	                                  <div class="comment-text">
+	                                   问题内容
+	                                </div>
+	                                <div class="comment-text">
+	                                   回答
+	                                </div>
+	                                <div class="action">
+	                                     <div class="action">
+	                                       <button type="button" class="btn btn-primary btn-xs" title="修改">
+	                                        <span class="glyphicon glyphicon-pencil"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-success btn-xs" title="已采纳">
+	                                        <span class="glyphicon glyphicon-ok"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-danger btn-xs" title="删除记录">
+	                                        <span class="glyphicon glyphicon-trash"></span>
+	                                    </button>
+	                                    
+	                                </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                 <li class="list-group-item">
+	                        <div class="row">
+	                            <div class="col-xs-2 col-md-1">
+	                                <img src="http://placehold.it/80" class="img-circle img-responsive" alt="" /></div>
+	                            <div class="col-xs-10 col-md-11">
+	                                <div>
+	                                    <a href="http://www.jquery2dotnet.com/2013/10/google-style-login-page-desing-usign.html">
+	                                       <h3>问题</h3>
+	                                       </a>
+	                                    <div class="mic-info">
+	                                        发布时间：<a href="#">666</a>
+	                                        点赞数：<a href="">爆炸</a>
+	                                    </div>
+	                                </div>
+	                                
+	                                <div class="comment-text">
+	                                   问题内容
+	                                </div>
+	                                <div class="comment-text">
+	                                   回答
+	                                </div>
+	                                <div class="action">
+	                                     <div class="action">
+	                                       <button type="button" class="btn btn-primary btn-xs" title="修改">
+	                                        <span class="glyphicon glyphicon-pencil"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-success btn-xs" title="已采纳">
+	                                        <span class="glyphicon glyphicon-ok"></span>
+	                                    </button>
+	                                    <button type="button" class="btn btn-danger btn-xs" title="删除记录">
+	                                        <span class="glyphicon glyphicon-trash"></span>
+	                                    </button>
+	                                    
+	                                </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                </ul>
+	                 <div class="col col-xs-8">
+	                    <ul class="pagination hidden-xs pull-right">
+	                      <li><a href="#">1</a></li>
+	                      <li><a href="#">2</a></li>
+	                      <li><a href="#">3</a></li>
+	                      <li><a href="#">4</a></li>
+	                      <li><a href="#">5</a></li>
+	                    </ul>
+	                    <ul class="pagination visible-xs pull-right">
+	                        <li><a href="#">«</a></li>
+	                        <li><a href="#">»</a></li>
+	                    </ul>
+                 	 </div>
+				</div>
 			</div>
-			
-			<div class="collapse navbar-collapse bs-js-navbar-scrollspy">
-				<ul class="nav navbar-nav">
-					<li><a href="#ios">iOS</a></li>
-					<li><a href="#svn">SVN</a></li>
-					<li class="dropdown">
-						<a href="#" id="navbarDrop1" class="dropdown-toggle" 
-						   data-toggle="dropdown">Java
-							<b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu" role="menu" 
-							aria-labelledby="navbarDrop1">
-							<li><a href="#jmeter" tabindex="-1">jmeter</a></li>
-							<li><a href="#ejb" tabindex="-1">ejb</a></li>
-							<li class="divider"></li>
-							<li><a href="#spring" tabindex="-1">spring</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div> 
-	</nav>
-<div data-spy="scroll" data-target="#navbar-example" data-offset="0" 
-	 style="height:200px;overflow:auto; position: relative;">
-	<h4 id="ios">iOS</h4>
-	<p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple 
-		TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。
-	</p>
-	<h4 id="svn">SVN</h4>
-	<p>Apache Subversion，通常缩写为 SVN，是一款开源的版本控制系统软件。Subversion 由 CollabNet 公司在 2000 年创建。但是现在它已经发展为 Apache Software Foundation 的一个项目，因此拥有丰富的开发人员和用户社区。
-	</p>
-	<h4 id="jmeter">jMeter</h4>
-	<p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。
-	</p>
-	<h4 id="ejb">EJB</h4>
-	<p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
-	</p>
-	<h4 id="spring">Spring</h4>
-	<p>Spring 框架是一个开源的 Java 平台，为快速开发功能强大的 Java 应用程序提供了完备的基础设施支持。
-	</p>
-	<p>Spring 框架最初是由 Rod Johnson 编写的，在 2003 年 6 月首次发布于 Apache 2.0 许可证下。
-	</p>
-</div>
-			</div>
-			<div id="index3">
-				
-			</div>
+		
 			
 		</div>
 		<!-- 个人信息部分 -->
 		<div class="col-md-3"> 
 			<!-- 头像  粉丝/关注 绑定 -->
-			<div  style="border: 1px solid #4E668E" >
-				<div  class="pos  text-center">
-					<a href=""><img src="./public/images/tx.png" style="border-radius: 50%"></a>
-					<input type="file" name="" style="position: absolute;top: 0px;height: 180px;width: 205px;border-radius: 50% ;opacity: 0; " placeholder="上传头像">
+			<div   >
+				<div  class="pos  text-center afollow" >
+					<a href=""><img src="./public/images/tx.png" style=""></a>
+					<input type="file " name="" title="上传头片" id="afoll-inp" placeholder="上传头像">
 
-					<div class="" style="border: 1px solid #417C94;">
+					<div class="" >
 						<ul class=" nav nav-pills" style="padding: 1px 10px;" >
 							<li  role="presentation">
 								<a href=""  class="padding-none">
@@ -324,28 +800,29 @@
 							
 						</ul>
 					</div>
+					<!-- 关注与粉丝 -->
+					<div class="afollow" style="background-color: #f6f6f6" >
+						<ul class="nav nav-pills" role="tablist" >
+						  <li role="presentation" ><a href="#" >关注 <span class="badge">42</span></a></li>
+						  <li  style="color: #C2C2C2">|</li>
+						  <li role="presentation" ><a href="#">粉丝<span class="badge">42</span></a></li>
+						  
+						</ul>	
+					</div>
 				</div>
 				
-			<!-- 关注与粉丝 -->
-				<div class="afollow" >
-					<ul class="nav nav-pills" role="tablist" >
-					  <li role="presentation" ><a href="#">关注 <span class="badge">42</span></a></li>
-					  <li  style="color: #C2C2C2">|</li>
-					  <li role="presentation" ><a href="#">粉丝<span class="badge">42</span></a></li>
-					  
-					</ul>	
-				</div>
+			
 			<!-- 表2 -->
-				<div style="border: 3px solid #7D7171" class="pos">
+				<div  class="pos">
 					<ul class="list-group">
 
-	 				  <li class="list-group-item change oaerror"> <a href="#" class="list-group-item bord-none " style=""><i class="glyphicon glyphicon-triangle-left pull-left" ></i> 我的主页 <i class="glyphicon-home glyphicon pull-right"></i></a></li>
+	 				  <li class="list-group-item change oaerror" style="border:none;margin: 10px 0;"> <a href="#" class="list-group-item bord-none " style=""><i class="glyphicon glyphicon-triangle-left pull-left" ></i> 我的主页 <i class="glyphicon-home glyphicon pull-right"></i></a></li>
 
 	 				  
-					  <li class="list-group-item change oaerror"><a href="#" class="list-group-item bord-none"><i class="glyphicon glyphicon-triangle-left pull-left " ></i>我的提问 <i class="glyphicon glyphicon-cloud-upload pull-right"></i></a></li>
-					  <li class="list-group-item change oaerror"> <a href="#" class="list-group-item bord-none"><i class="glyphicon glyphicon-triangle-left pull-left" ></i>我的收藏 <i class="glyphicon glyphicon-star pull-right"></i></a></li>
-					  <li class="list-group-item change oaerror"> <a href="#" class="list-group-item  bord-none"><i class="glyphicon glyphicon-triangle-left pull-left" ></i>我的笔记<i class="glyphicon glyphicon-pencil pull-right "></i></a></li>
-					  <li class="list-group-item change oaerror"> <a href="#" class="list-group-item bord-none"><i class="glyphicon glyphicon-triangle-left pull-left" ></i>我的分享 <i class="glyphicon glyphicon-globe pull-right"></i></a></li>
+					  <li class="list-group-item change oaerror" style="border:none;margin: 10px 0;"><a href="#" class="list-group-item bord-none"><i class="glyphicon glyphicon-triangle-left pull-left " ></i>我的提问 <i class="glyphicon glyphicon-cloud-upload pull-right"></i></a></li>
+					  <li class="list-group-item change oaerror" style="border:none;margin: 10px 0;"> <a href="#" class="list-group-item bord-none"><i class="glyphicon glyphicon-triangle-left pull-left" ></i>我的收藏 <i class="glyphicon glyphicon-star pull-right"></i></a></li>
+					  <li class="list-group-item change oaerror" style="border:none;margin: 10px 0;"> <a href="#" class="list-group-item  bord-none"><i class="glyphicon glyphicon-triangle-left pull-left" ></i>我的回答<i class="glyphicon glyphicon-pencil pull-right "></i></a></li>
+					  <li class="list-group-item change oaerror " style="border:none;margin: 10px 0;"> <a href="#" class="list-group-item bord-none"><i class="glyphicon glyphicon-triangle-left pull-left" ></i>我的分享 <i class="glyphicon glyphicon-globe pull-right"></i></a></li>
 					  
 					</ul>
 				</div>
@@ -354,6 +831,8 @@
 	</div>
 
 	<script type="text/javascript" href="./daohang.js"></script>
-	<script type="text/javascript"></script>
+	<script type="text/javascript">
+		
+	</script>
 </body>
 </html>

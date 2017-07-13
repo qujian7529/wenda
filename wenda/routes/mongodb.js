@@ -26,6 +26,22 @@ var Schema = mongoose.Schema ;
 
 //个人
 var grSchema = new Schema{
+	
+		Name:String,
+		Age:Number,
+		Gender:String,
+		Phone: Number,
+		BirthDay:Date,
+		Residence:String,
+		Email:String,
+		PersonalWebsite:String,
+		WorkExperience:String,
+		LearningExperience:String,
+		OpenSourceProject:String
+
+}
+//公用的
+var shareSchema = new Schema{
 	name: String,
 	Id:Schema.Types.ObjectId,
 	Id_wenti:Schema.Types.ObjectId,
@@ -37,7 +53,6 @@ var grSchema = new Schema{
 	fensishu:Number,
 	fensiming:Array,
 	touxiang:String,
-
 }
 //回答集合
 var hdSchema = new Schema{
@@ -76,84 +91,91 @@ var twSchema = new Schema{
 
 }
 
-// 步入数据库
-var Geren = mongoose.model('geren',grSchema);
+// // 步入数据库
+module.exports.Geren = mongoose.model('geren',grSchema);
 
-//通过Ifo对数据赋值
-var geren = new Geren({
-	name: String,
-	Id:Schema.Types.ObjectId,
-	Id_wenti:Schema.Types.ObjectId,
-	Id_shouchang:Schema.Types.ObjectId,
-	Id_huida:Schema.Types.ObjectId,
-	password:String,
-	follow:Number,
-	following:Array,
-	fensishu:Number,
-	fensiming:Array,
-	touxiang:String,
-}) 
-
-
-var Huida = mongoose.model('huida',hdSchema);
-
-var huida = new Huida({
-	Id_huida:Schema.Types.ObjectId,
-	name:String,
-	huida:String,
-	time:Date,
-	Id_wenti:Schema.Types.ObjectId,
-	dianzanshu:Number,
-	caina :Boolean
-}) 
+// //通过Ifo对数据赋值
+// var geren = new Geren({
+// 	name: String,
+// 	Id:Schema.Types.ObjectId,
+// 	Id_wenti:Schema.Types.ObjectId,
+// 	Id_shouchang:Schema.Types.ObjectId,
+// 	Id_huida:Schema.Types.ObjectId,
+// 	password:String,
+// 	follow:Number,
+// 	following:Array,
+// 	fensishu:Number,
+// 	fensiming:Array,
+// 	touxiang:String,
+// }) 
 
 
-var Shoucang = mongoose.model('shoucang',scSchema);
+module.exports.Huida = mongoose.model('huida',hdSchema);
 
-var shoucang = new Shoucang({
-	//提问者
-	name:String,
-	time:Date,
-	wenti_h:String,
-	wenti:String,
-	shoucang:Boolean,
+// var huida = new Huida({
+// 	Id_huida:Schema.Types.ObjectId,
+// 	name:String,
+// 	huida:String,
+// 	time:Date,
+// 	Id_wenti:Schema.Types.ObjectId,
+// 	dianzanshu:Number,
+// 	caina :Boolean
+// }) 
 
-	//回答者
-	name2:String,
-	huida:String,
-	time2:Date,
-	dianzanshu:Number,
-	caina :Boolean
-}) 
+module.exports.Shoucang = mongoose.model('shoucang',scSchema);
+
+// var shoucang = new Shoucang({
+// 	//提问者
+// 	name:String,
+// 	time:Date,
+// 	wenti_h:String,
+// 	wenti:String,
+// 	shoucang:Boolean,
+
+// 	//回答者
+// 	name2:String,
+// 	huida:String,
+// 	time2:Date,
+// 	dianzanshu:Number,
+// 	caina :Boolean
+// }) 
 
 
-var Tiwen = mongoose.model('tiwen',twSchema);
+module.exports.Tiwen = mongoose.model('tiwen',twSchema);
 
-var tiwen = new Tiwen({
-	Id_wenti:Schema.Types.ObjectId,
-	time:Date,
-	wenti_h:String,
-	wenti:String,
-	shoucang:Boolean,
-}) 
+// var tiwen = new Tiwen({
+// 	Id_wenti:Schema.Types.ObjectId,
+// 	time:Date,
+// 	wenti_h:String,
+// 	wenti:String,
+// 	shoucang:Boolean,
+// }) 
 
 //保存到数据库
-geren.save(function(err,date){
-	if(err)console.log('save error');
-})
+// geren.save(function(err,date){
+// 	if(err)console.log('save error');
+// })
 
 
-huida.save(function(err,date){
-	if(err)console.log('save error');
-})
-tiwen.save(function(err,date){
-	if(err)console.log('save error');
-})
-shoucang.save(function(err,date){
-	if(err)console.log('save error');
-})
+// huida.save(function(err,date){
+// 	if(err)console.log('save error');
+// })
+// tiwen.save(function(err,date){
+// 	if(err)console.log('save error');
+// })
+// shoucang.save(function(err,date){
+// 	if(err)console.log('save error');
+// })
 
+// Geren.remove({name: 'David'}, function (err) {
+//   console.log("remove");
+//   if(err) console.log(err);
+// });
 
+// Geren.find({}, function(err, data){
+//   console.log("find");
+//   console.log(data);
+// });
 
 
 // //对象

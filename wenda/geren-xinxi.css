@@ -1,22 +1,64 @@
+/*我的主页  内容区*/
+#index{
+	border-left:  1px solid #ccc;
+}
+.ind-head li a{
+	padding: 24px
+}
+#navbar-example {
+	margin-bottom: 0;
+}
+#wdow{
+	height:800px;
+	overflow:auto;
+	position: relative;
+}
 
-/*内容*/
-body { padding-top:30px; }
-.widget .panel-body { padding:0px; }
-.widget .list-group { margin-bottom: 0; }
-.widget .panel-title { display:inline }
-.widget .label-info { float: right; }
-.widget li.list-group-item {border-radius: 0;border: 0;border-top: 1px solid #ddd;}
-.widget li.list-group-item:hover { background-color: rgba(86,61,124,.1); }
-.widget .mic-info { color: #666666;font-size: 11px; }
-.widget .action { margin-top:5px; }
-.widget .comment-text { font-size: 12px; }
-.widget .btn-block { border-top-left-radius:0px;border-top-right-radius:0px; }
+#wdow .wdow-di{
+	margin: 10px auto;
+	width: 80%;
+}
 
 
+#wdow .wdow-di .wdow-t{
+	border-radius: 5px 5px 0 0;
+	background-color:#008F2F;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	padding-left: 20px;
+}
+#wdow .wdow-di .wdow-n{
+	border: 1px solid #008F2F;
+	padding: 15px	;
+	border-radius: 0 0 5px 5px;
+}
+
+#wdow .wdow-di .wdow-n .wdow-n-one{
+	border-bottom: 1px solid #ccc;
+	padding:5px 10px
+}
+#wdow .wdow-di .wdow-n .d-sp{
+	
+	display: inline-block;
+	width: 170px;
+	padding:5px 10px ;
+	margin: 10px 5px;
+}
+
+#wdow .wdow-di .wdow-n .fon-cor{
+	color: #777;
+}
+
+#wdow .wdow-di .wdow-n .wdow-n-two{
+	border-bottom: 1px solid #ccc;
+	padding:10px 10px ;
+	height:120px ;
+}
+#wdow .wdow-di .wdow-n .wdow-n-strry{
+	padding:5px 10px ;height:100px 
+}
 /*头像  粉丝/关注 绑定*/
-
-
-
 
 
 .padding-none{
@@ -24,20 +66,35 @@ body { padding-top:30px; }
 }
 
 .afollow{
-	border: 1px solid #44326C;
-	margin-top: 12px;
+	background-color: #f6f6f6
 
 }
+.afollow img{
+	border-radius: 50%;
+}
+
+#afoll-inp{
+	position: absolute;
+	top: 0px;
+	left: 24px;
+	height: 180px;
+	width: 205px;
+	border-radius: 50% ;
+	opacity: 0; 
+}
+
 .afollow ul{
 	text-align: center;
 	margin: 1px auto;
-
+	
 }
 
 .afollow ul li{
 	display: inline-block;
-	float: none
+	float: none;
+	
 }
+
 
 /*表2*/
 .oaerror {
