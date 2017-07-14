@@ -45,6 +45,7 @@
      router.post('/geren_wtwo',function(req,res,next){..res.redirect('/geren');})
      router.post('/geren_wtre',function(req,res,next){..res.redirect('/geren');})
      router.post('/geren_wfor',function(req,res,next){..res.redirect('/geren');})
+     router.get('/',function (req,res,next){res.render('geren');})
  ```
  
  
