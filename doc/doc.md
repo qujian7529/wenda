@@ -33,11 +33,12 @@
     app.use('/geren_wfor',geren_wfor);
     
     
-   geren.js :提交某个表单 然后重定向到本页面
+   geren.js :提交某个表单 然后重定向到本页面：
+     
      router.get('/',function (req,res,next) {
     
         res.render('geren');
-    })
+     })
     router.post('/geren_wone',function(req,res,next){..res.redirect('/geren');})
     router.post('/geren_wtwo',function(req,res,next){..res.redirect('/geren');})
     router.post('/geren_wtre',function(req,res,next){..res.redirect('/geren');})
