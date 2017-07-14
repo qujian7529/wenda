@@ -34,26 +34,27 @@
     app.use('/geren_wfor',geren_wfor);
  ```
     
-   geren.js:提交某个表单 然后重定向到本页面 :
-  ```js
-     router.get('/',function (req,res,next){
-      res.render('geren');
-     })
-  ```
-  
-
-    router.post('/geren_wone',function(req,res,next){..res.redirect('/geren');})
-    router.post('/geren_wtwo',function(req,res,next){..res.redirect('/geren');})
-    router.post('/geren_wtre',function(req,res,next){..res.redirect('/geren');})
-    router.post('/geren_wfor',function(req,res,next){..res.redirect('/geren');})
+     
+     
+ geren.js:提交某个表单 然后重定向到本页面:
  
-   geren.ejs： 因为js里路径/  代表了 /geren  所以路径要写成   /geren/..这样的形式
-
-    <form class="formcss" action="/geren/geren_wone" method="post" >
-   	<form class="formcss" action="/geren/geren_wtwo" method="post" >
-    <form class="formcss" action="/geren/geren_wtre" method="post" >
-    <form class="formcss" action="/geren/geren_wfor" method="post">
-   
+ 
+ ```js
+    
+     router.post('/geren_wone',function(req,res,next){..res.redirect('/geren');})
+     router.post('/geren_wtwo',function(req,res,next){..res.redirect('/geren');})
+     router.post('/geren_wtre',function(req,res,next){..res.redirect('/geren');})
+     router.post('/geren_wfor',function(req,res,next){..res.redirect('/geren');})
+ ```
+ 
+ 
+ geren.ejs： 因为js里路径/  代表了 /geren  所以路径要写成   /geren/..这样的形式
+ ```js
+     <form class="formcss" action="/geren/geren_wone" method="post" >
+     <form class="formcss" action="/geren/geren_wtwo" method="post" >
+     <form class="formcss" action="/geren/geren_wtre" method="post" >
+     <form class="formcss" action="/geren/geren_wfor" method="post">
+ ```  
 
 
 
