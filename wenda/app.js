@@ -4,11 +4,16 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session = require('express-session');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 var tiwen = require('./routes/tiwen');
 var geren = require('./routes/geren');
+var geren_wone =require('./routes/geren');
+var geren_wtwo = require('./routes/geren');
+var geren_wtre = require('./routes/geren');
+var geren_wfor = require('./routes/geren');
 
 var app = express();
 
@@ -24,10 +29,23 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+  resave: true,
+  saveUninitalized: false,
+  secret: 'adsjfasksdafjhsadkfhdirfkhvaskdf',
+  cookie: {
+    maxAge: 1000 * 60 * 30
+  }
+}));
+
+
 app.use('/', index);
 app.use('/users', users);
 app.use('/geren',geren);
-
+app.use('/geren_wone',geren_wone);
+app.use('/geren_wtwo',geren_wtwo);
+app.use('/geren_wtre',geren_wtre);
+app.use('/geren_wfor',geren_wfor);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -42,7 +60,7 @@ app.use(function(err, req, res, next) {
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   // render the error page
-  res.status(err.status || 3000);
+  res.status(err.status || 500);
   res.render('error');
 });
 

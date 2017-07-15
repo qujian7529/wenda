@@ -1,4 +1,4 @@
-var MongoClient = require('mongodb').MongoClient;
+// var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var query = require('querystring');
 var mongoose =require('mongoose');
@@ -25,23 +25,79 @@ db.once('open',function(){
 var Schema = mongoose.Schema ;
 
 //个人
-var grSchema = new Schema{
-	
+var grSchema = new Schema({
+		GerenID:_id,
 		Name:String,
 		Age:Number,
-		Gender:String,
+		// Gender:String,
 		Phone: Number,
 		BirthDay:Date,
 		Residence:String,
 		Email:String,
 		PersonalWebsite:String,
-		WorkExperience:String,
-		LearningExperience:String,
-		OpenSourceProject:String
+		ResumeDescription:String,
+		GoodSkills:String
+		
 
-}
+})
+//公司
+var gsSchema = new Schema({
+		// 公司
+		Company:String,
+		//职位
+		JobTitle:String,
+		// 入职时间
+		InductionTime:Date,
+		//先在职否
+		OnJob: Boolean,
+		//离职时间
+		DepartureTime:Date,
+		//相关技术
+		CompRelatedTechnology:String,
+		//职位描述
+		JobDescription:String
+} )
+//项目
+var xmSchema =  new Schema({
+		//项目名
+		ProjectName:String,
+		//项目网址
+		ProjectURL:String,
+		//起止时间
+		ProjectStartingTime:Date,
+		//是否结束
+		IsOver:Boolean,
+		//依旧在维护 先时间
+		MaintainTime:Date,
+		// 项目角色
+		ProjectRoles:String,
+		// 相关技术
+		ProjectRelatedTechnolog:String,
+		// 项目描述
+		ProjectDescription:String
+})
+//教育
+var jySchema = new Schema({
+		// 院校
+		Colleges:String,
+		// 所属专业
+		Major:String,
+		// 起止时间
+		EducationStartingTime:Date,
+		// 是否在就读
+		IsAttendSchool:Boolean,
+		// 毕业时间
+		GraduationTime:Date,
+		// 学历
+		Education:String,
+		// 相关技术
+		EducationRelatedTechnolog:String,
+		// 取得成就
+		Achieve:String
+})
+
 //公用的
-var shareSchema = new Schema{
+var shareSchema = new Schema({
 	name: String,
 	Id:Schema.Types.ObjectId,
 	Id_wenti:Schema.Types.ObjectId,
@@ -53,9 +109,9 @@ var shareSchema = new Schema{
 	fensishu:Number,
 	fensiming:Array,
 	touxiang:String,
-}
+})
 //回答集合
-var hdSchema = new Schema{
+var hdSchema = new Schema({
 	Id_huida:Schema.Types.ObjectId,
 	name:String,
 	huida:String,
@@ -64,9 +120,9 @@ var hdSchema = new Schema{
 	dianzanshu:Number,
 	caina :Boolean
 
-}
+})
 //收藏  对问题、回答进行备份
-var scSchema = new Schema{
+var scSchema = new Schema({
 	//提问者
 	name:String,
 	time:Date,
@@ -80,20 +136,22 @@ var scSchema = new Schema{
 	time2:Date,
 	dianzanshu:Number,
 	caina :Boolean
-} 
+} )
 //提问
-var twSchema = new Schema{
+var twSchema = new Schema({
 	Id_wenti:Schema.Types.ObjectId,
 	time:Date,
 	wenti_h:String,
 	wenti:String,
 	shoucang:Boolean,
 
-}
+})
 
 // // 步入数据库
 module.exports.Geren = mongoose.model('geren',grSchema);
-
+module.exports.Comp = mongoose.model('gongsi',gsSchema);
+module.exports.EducationalExperience = mongoose.model('jiaoyu',jySchema);
+module.exports.Project = mongoose.model('xiangmu',xmSchema);
 // //通过Ifo对数据赋值
 // var geren = new Geren({
 // 	name: String,

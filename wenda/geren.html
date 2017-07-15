@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>个人界面</title>
+	<meta charset="utf-8">
 	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet" />
 	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -119,9 +120,9 @@
 		</div>
 	</nav>
 <!-- </div> -->
-	<div style="height: 57px; width: auto;"></div>	
+	<div class="padd"></div>	
 
-	<div class="container ">
+	<div class="container " >
 
 		<!-- 个人内容部分 -->
 		<div class="col-md-9 pos ">
@@ -207,28 +208,84 @@
 							  		<div  class="pos wdow-n-two ">
 							  			<div>擅长技术</div>
 							  		</div>
-							  		<div>
-										<form>
-											  <div class="form-group">
-											    <label for="exampleInputEmail1">Email address</label>
-											    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-									
-											  </div>
-											  <div class="form-group">
-											    <label for="exampleInputPassword1">Password</label>
-											    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-											  </div>
-											  <div class="form-group">
-											    <label for="exampleInputFile">File input</label>
-											    <input type="file" id="exampleInputFile">
-											    <p class="help-block">Example block-level help text here.</p>
-											  </div>
-											  <div class="checkbox">
-											    <label>
-											      <input type="checkbox"> Check me out
-											    </label>
-											  </div>
-											  <button type="submit" class="btn btn-default">Submit</button>
+							  		<div   >
+							  			<!-- from ************************************1 -->
+										<form class="formcss" action="/geren_wone" >
+											<div class="row">
+												<div class="col-md-6" > 
+													<div class="form-group">
+													    <label for="exampleInputEmail1">真实姓名</label>
+													    <input type="text" class="form-control" placeholder="姓名" name="name">
+											
+												  	</div>
+											  	</div>
+												<div class="col-md-6">
+													 <div class="form-group">
+													    <label for="exampleInputPassword1">性别</label>
+													    <div class="">
+													    	<label class="checkbox-inline" >
+													    	<input type="radio" name="age" value="0"  >保密
+														    </label>
+														    <label class="checkbox-inline" > 
+														    	<input type="radio" name="age" value="1"  >男
+														    </label>
+														    <label class="checkbox-inline" >
+														    	 <input type="radio" name="age" value="2" >女
+														    </label>
+													    </div>
+													    
+													    
+													   
+													   
+													  </div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													  <div class="form-group">
+													    <label for="exampleInputFile">出生日期</label>
+													    <input type="date" class="form-control" name="birthday">
+													   
+													  </div>
+												</div>
+												<div class="col-md-6">
+													  <div class="form-group">
+													    <label for="exampleInputFile">手机号码</label>
+													    <input type="number" class="form-control" name="phone" placeholder="phone">
+													   
+													  </div>
+												</div>
+											</div>
+											 <div class="row">
+											 	 <div class="col-md-6">
+												 	 	  <div class="form-group">
+														    <label for="exampleInputFile">Email</label>
+														    <input type="email" class="form-control" placeholder="邮箱" name="email">
+														   
+														  </div>
+											 	 </div>
+											 	 <div class="col-md-6">
+											 	 		<div class="form-group">
+													    <label for="exampleInputFile">现居住地</label>
+													      <input type="text" name="residence" class="form-control" placeholder="现居住地">
+													    
+													  </div>
+													  
+											 	 </div>
+											 </div>
+											
+											<!-- 履历说明 -->
+											 <div >
+											 	<label class="">履历说明</label>
+											 	<textarea class="form-control" placeholder="请开始你的表演" name="resumeDescription" rows="6"></textarea>
+											 </div>
+											 <!-- 技术擅长  -->
+											 <div>
+												<label class="">擅长技术</label>
+												<input type="text" name="goodSkills" placeholder="0_0 |||" >
+											 </div>
+											  <button type="button" class=" btn btn-default js-cancel ">取消</button>
+											   <button type="submit" class=" btn btn-default js-cancel ">提交</button>
 										</form>
 									</div>
 								</div>
@@ -243,12 +300,73 @@
 							  		<div  class="pos wdow-n-strry">
 							  			<div><a href="">添加工作经历</a></div>
 							  		</div>
-							  		<div>
-										<form>
-											<div class="form-group">
-											    <label for="exampleInputEmail1">Email address</label>
-											    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+							  		<div   >
+							  			<!-- form *****************************82 -->
+										<form class="formcss" action="/geren_wtwo" >
+											
+											<div class="row">
+												<div class="col-md-6" > 
+													<div class="form-group">
+													    <label for="exampleInputEmail1">公司</label>
+													    <input type="text" class="form-control" placeholder="哪家滴呀" name="company">
+											
+												  	</div>
+											  	</div>
+												<div class="col-md-6">
+													  <div class="form-group">
+													    <label for="exampleInputFile">职位头衔</label>
+													    <input type="text" name="jobTitle" class="form-control" placeholder="程序员">
+													   
+													  </div>
+												</div>
 											</div>
+											<div class="row">
+												<div class="col-md-3">
+													  <div class="form-group">
+													    <label for="exampleInputFile">在职时间</label>
+													    <label class="required control-label"><input type="text" class="form-control " placeholder="入职时间：1970-01" name="inductionTime" ></label>
+													   
+													    
+													   	 
+													  </div>
+												</div>
+												<div class="col-md-3">
+													  <div class="form-group">
+													   
+													    <label >
+													    <input type="checkbox" name="onJob" >目前仍然在职
+													    </label>
+													    <label class="required control-label">
+													    <input type="text" class="form-control " placeholder="离职时间" name="departureTime"></label>
+													    
+													   	 
+													  </div>
+												</div>
+											</div>
+
+											<div >
+												 <div class="form-group">
+													   
+												    <label class="">相关技术</label>
+												    
+												   		<input class="form-control " type="text" name="relatedTechnology" placeholder="0_0 |||">
+												
+													    
+											   	 
+											  </div>
+											</div>
+												
+											 <div  >
+											 	<label class="">职位描述</label>
+											 	<textarea class="form-control" placeholder="请开始你的表演" rows="6" name="jobDescription"></textarea>
+											 </div>
+											
+											
+											<button type="button" class=" btn btn-default js-cancel ">取消</button>
+											   <button type="submit" class=" btn btn-default js-cancel ">提交</button>
+											
+											
+											
 										</form>
 									</div>
 								</div>
@@ -260,20 +378,194 @@
 						 		<div class="wdow-n">
 
 								  	
-							  	<div  class="pos wdow-n-strry">
-							  			<div><a href="">添加开源项目、文章著作</a></div>
-							  		</div>
-							  
+								  	<div  class="pos wdow-n-strry">
+								  			<div><a href="">添加开源项目、文章著作</a></div>
+								  	</div>
+							  		<div >
+							  			<!-- form *******************************3 -->
+										<form class="formcss" action="geren_wtre" >
+											
+											<div class="row">
+												<div class="col-md-6" > 
+													<div class="form-group">
+													    <label for="exampleInputEmail1">项目名</label>
+													    <input type="text" class="form-control"  name="projectName" placeholder="啥项目呀">
+											
+												  	</div>
+											  	</div>
+												<div class="col-md-6">
+													  <div class="form-group">
+													    <label for="exampleInputFile">项目网址</label>
+													    <input type="text" class="form-control" name="projectURL" placeholder="http://123.com">
+													   
+													  </div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-3">
+													  <div class="form-group">
+													    <label for="exampleInputFile">起止时间</label>
+													    <label class="required control-label"><input type="text" class="form-control " placeholder="入职时间：1970-01" name="projectStartingTime"></label>
+													   
+													    
+													   	 
+													  </div>
+												</div>
+												<div class="col-md-3">
+													  <div class="form-group">
+													   	
+													    <label >
+													    <input type="checkbox" name="maintainTime" >目前在维护
+													    </label>
+													    <label class="required control-label">
+													    <input type="text" name="isOver" class="form-control " placeholder="离职时间"></label>
+													    
+													   	 
+													  </div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+													   
+													    <label >
+													    项目角色
+													    </label>
+													    <label class="required control-label">
+													    <select name="projectRoles">
+													    	<option >主力开发者</option>
+													    	<option>助理开发者</option>
+													    	<option>项目经理</option>
+													    </select>
+													    </label>
+													    
+													   	 
+													  </div>
+												</div>
+											</div>
+
+											<div >
+												 <div class="form-group">
+													   
+												    <label class="">相关技术</label>
+												    
+												   		<input class="form-control " type="text" name="projectRelatedTechnology" placeholder="0_0 |||">
+												
+													    
+											   	 
+											  </div>
+											</div>
+												
+											 <div  >
+											 	<label class="">职位描述</label>
+											 	<textarea class="form-control" placeholder="请开始你的表演" name="projectDescription" rows="6"></textarea>
+											 </div>
+											
+											
+											<button type="button" class=" btn btn-default js-cancel ">取消</button>
+											   <button type="button" class=" btn btn-default js-cancel ">提交</button>
+											
+											
+											
+										</form>
 								</div>
+
+								</div>
+								
 						 	</div>
 						 	<div class="wdow-di" id="jl">
 						 		<div class="wdow-t" >教育经历</div>
 						 		<div class="wdow-n">
 
 								  	
-							  	<div  class="pos wdow-n-strry">
+							  		<div  class="pos wdow-n-strry">
 							  			<div><a href="">添加教育经历</a></div>
 							  		</div>
+
+							  		<div   >
+							  			<!-- form********************************4 -->
+										<form class="formcss" action="/geren_wfor" >
+											
+											<div class="row">
+												<div class="col-md-6" > 
+													<div class="form-group">
+													    <label for="exampleInputEmail1">院校</label>
+													    <input type="text" class="form-control" name="colleges" placeholder="">
+											
+												  	</div>
+											  	</div>
+												<div class="col-md-6">
+													  <div class="form-group">
+													    <label for="exampleInputFile">所学专业</label>
+													    <input type="text" class="form-control" name="major" placeholder="电子信息科学与技术">
+													   
+													  </div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-3">
+													  <div class="form-group">
+													    <label for="exampleInputFile">起止时间</label>
+													    <label class="required control-label"><input type="text" class="form-control " placeholder="入职时间：1970-01" name="educationStartingTime"></label>
+													   
+													    
+													   	 
+													  </div>
+												</div>
+												<div class="col-md-3">
+													  <div class="form-group">
+													   
+													    <label >
+													    <input type="checkbox" name="isAttendSchool"  >是否在就读
+													    </label>
+													    <label class="required control-label">
+													    <input type="text" class="form-control " name="graduationTime" placeholder="毕业时间"></label>
+													    
+													   	 
+													  </div>
+												</div>
+												<div class="col-md-3">
+													  <div class="form-group">
+													   
+													    <label >
+													    学历
+													    </label>
+													    <label class="required control-label">
+													    	<select name="education" >
+													    		<option value="学科">学科</option>
+													    		<option value="硕士">硕士</option>
+													    		<optgroup value="博士">博士</optgroup>
+													    	</select>
+													    </label>
+													    
+													   	 
+													  </div>
+												</div>
+											</div>
+
+											<div >
+												 <div class="form-group">
+													   
+												    <label class="" >相关技术</label>
+												    
+												   		<input class="form-control " type="text" name="EducationRelatedTechnolog" placeholder="0_0 |||">
+												
+													    
+											   	 
+											  </div>
+											</div>
+												
+											 <div  >
+											 	<label class="">取得成就</label>
+											 	<textarea class="form-control" placeholder="请开始你的表演" name="achieve" rows="6"></textarea>
+											 </div>
+											
+											
+											<button type="button" class=" btn btn-default js-cancel ">取消</button>
+											   <button type="submit" class=" btn btn-default js-cancel ">提交</button>
+											
+											
+											
+										</form>
+									</div>
 							  
 								</div>
 						 	</div>
@@ -781,19 +1073,21 @@
 		
 			
 		</div>
+		
+				
 		<!-- 个人信息部分 -->
-		<div class="col-md-3"> 
+		<div class="col-md-3 col-sm-12 col-xs-12 " > 
 			<!-- 头像  粉丝/关注 绑定 -->
-			<div   >
-				<div  class="pos  text-center afollow" >
-					<a href=""><img src="./public/images/tx.png" style=""></a>
+			<div  class="pos">
+				<div  class="pos  text-center afollow " >
+					<a href=""><img src="./public/images/tx.png" class="center-block text-center"></a>
 					<input type="file " name="" title="上传头片" id="afoll-inp" placeholder="上传头像">
 
 					<div class="" >
-						<ul class=" nav nav-pills" style="padding: 1px 10px;" >
+						<ul class=" nav nav-pills padding-none"  >
 							<li  role="presentation">
 								<a href=""  class="padding-none">
-									<img src="./public/images/github02.png"></a></li>
+									<img src="./public/images/github02.png" ></a></li>
 							<li role="presentation" ><a href=""><img src="./public/images/weibo02.png"></a></li>
 							<li role="presentation"><a href="">..</a></li>
 							
@@ -801,10 +1095,10 @@
 						</ul>
 					</div>
 					<!-- 关注与粉丝 -->
-					<div class="afollow" style="background-color: #f6f6f6" >
+					<div class="afollow"  >
 						<ul class="nav nav-pills" role="tablist" >
 						  <li role="presentation" ><a href="#" >关注 <span class="badge">42</span></a></li>
-						  <li  style="color: #C2C2C2">|</li>
+						  
 						  <li role="presentation" ><a href="#">粉丝<span class="badge">42</span></a></li>
 						  
 						</ul>	
@@ -812,27 +1106,62 @@
 				</div>
 				
 			
-			<!-- 表2 -->
-				<div  class="pos">
+			<!-- 表2  -->
+			
+			<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="navfi">
+				<div  class="pos row" >
 					<ul class="list-group">
 
-	 				  <li class="list-group-item change oaerror" style="border:none;margin: 10px 0;"> <a href="#" class="list-group-item bord-none " style=""><i class="glyphicon glyphicon-triangle-left pull-left" ></i> 我的主页 <i class="glyphicon-home glyphicon pull-right"></i></a></li>
+	 				  <li class="list-group-item change oaerror rigli" id="rili1" > 
+	 				  	<a href="#index" class="list-group-item bord-none " style="">
+		 				  	<i class="glyphicon glyphicon-triangle-left pull-left" ></i> 
+		 				  	我的主页 
+		 				  	<i class="glyphicon-home glyphicon pull-right">	</i>
+	 				  	</a>
+	 				  </li>
 
 	 				  
-					  <li class="list-group-item change oaerror" style="border:none;margin: 10px 0;"><a href="#" class="list-group-item bord-none"><i class="glyphicon glyphicon-triangle-left pull-left " ></i>我的提问 <i class="glyphicon glyphicon-cloud-upload pull-right"></i></a></li>
-					  <li class="list-group-item change oaerror" style="border:none;margin: 10px 0;"> <a href="#" class="list-group-item bord-none"><i class="glyphicon glyphicon-triangle-left pull-left" ></i>我的收藏 <i class="glyphicon glyphicon-star pull-right"></i></a></li>
-					  <li class="list-group-item change oaerror" style="border:none;margin: 10px 0;"> <a href="#" class="list-group-item  bord-none"><i class="glyphicon glyphicon-triangle-left pull-left" ></i>我的回答<i class="glyphicon glyphicon-pencil pull-right "></i></a></li>
-					  <li class="list-group-item change oaerror " style="border:none;margin: 10px 0;"> <a href="#" class="list-group-item bord-none"><i class="glyphicon glyphicon-triangle-left pull-left" ></i>我的分享 <i class="glyphicon glyphicon-globe pull-right"></i></a></li>
+					  <li class="list-group-item change oaerror rigli" id="rili2" >
+						  <a href="#index2" class="list-group-item bord-none">
+							  <i class="glyphicon glyphicon-triangle-left pull-left " ></i>
+							  我的提问
+							   <i class="glyphicon glyphicon-cloud-upload pull-right"></i>
+						  </a>
+					  </li>
+					  <li class="list-group-item change oaerror rigli"  id="rili3" > 
+						  <a href="#index3" class="list-group-item bord-none">
+							  <i class="glyphicon glyphicon-triangle-left pull-left" ></i>
+							  我的收藏
+							   <i class="glyphicon glyphicon-star pull-right"></i>
+						  </a>
+					  </li>
+					  <li class="list-group-item change oaerror rigli" id="rili4" > 
+						  <a href="#index4" class="list-group-item  bord-none">
+							  <i class="glyphicon glyphicon-triangle-left pull-left" ></i>
+							 	 我的回答
+							  <i class="glyphicon glyphicon-pencil pull-right "></i>
+						  </a>
+					  </li>
+					  <li class="list-group-item change oaerror rigli " id="rili5" > 
+						  <a href="#index5" class="list-group-item bord-none">
+							  <i class="glyphicon glyphicon-triangle-left pull-left" ></i>
+							  	我的分享 
+							  <i class="glyphicon glyphicon-globe pull-right"></i>
+						  </a>
+					  </li>
 					  
 					</ul>
 				</div>
-			
+				</nav>
+			</div>
 		</div>
+		
 	</div>
-
 	<script type="text/javascript" href="./daohang.js"></script>
 	<script type="text/javascript">
 		
+
+
 	</script>
 </body>
 </html>
