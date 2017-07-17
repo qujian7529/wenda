@@ -10,7 +10,9 @@
 3.分页
 4.滚动监听
 5.路由跳转
-
+6.session
+7.input type='data'  type='radio' 在页面上的显示
+8.数据库获取对象
 # 解决方法
 
 1.将input绝对定位 大小与img相同  隐藏  opacity
@@ -56,13 +58,57 @@
      <form class="formcss" action="/geren/geren_wtre" method="post" >
      <form class="formcss" action="/geren/geren_wfor" method="post">
  ```  
+6.session  定义
+maxAge 定义的时间
+```
+app.use(session({
+	resave: true,
+  saveUninitialized: false,
+  secret: '3nqr9xzx2438fgsdam4324n',
+	cookie:{
+		maxAge: 1000*60*30
+	}
+}));
+```
+session 定义的东西 相当于public 他其后的东西是全局的对象  可以存放 数组 变量  json等任何数据  用的时候就用他后的对象去引入  全局对象定义的值
 
-
+7.引入moment
+```
+var moment = require('moment');
+var dat=moment(data[0].BirthDay).format('YYYY-MM-DD');
+```
+因为 数据库定义的date 是很长的  和html里的不一样 所以要正确匹配  然后给value才可以
+ radio可以用
+ ```
+	<label class="checkbox-inline" >
+													    	<input type="radio" name="gender" value="0"  
+													    	<% if(gender == '0'){ %>
+													    		checked="checked" 
+													    	<% } %>
+													    	>保密
+														    </label>
+														    <label class="checkbox-inline" > 
+														    	<input type="radio" name="gender" value="1" 
+														    	<% if(gender == '1'){ %>
+													    			checked="checked" 
+													    		<% } %>
+														    	 >男
+														    </label>
+														    <label class="checkbox-inline" >
+														    	 <input type="radio" name="gender" value="2" 
+														    	<% if(gender == '2'){ %>
+													    			checked="checked" 
+													    		<% } %>
+														    	 >女
+				</label>
+```
 
 
 center-block  块居中  text-center 文本居中
 clearfix 清除浮动
 text-hide 图片替换
+
+8.数据库获取对象的东西时  data时数组  获取时用data[0]
 
 
 
