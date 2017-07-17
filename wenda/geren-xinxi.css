@@ -1,4 +1,33 @@
 
+
+
+body{
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	background-color: #f6f6f6;
+	/*background: url('./public/images/bodybg.jpg');*/
+}
+.jianjie{
+	height: 290px;
+	width: 240px;
+	background-color: #485458;
+	padding: 10px;
+	/*float: right;*/
+}
+
+.body-head ul{
+	list-style: none;
+
+}
+.body-head ul li{
+	float: left;
+	/*border: 1px solid green;*/
+	padding: 10px 5px ;
+}
+.pos{
+    		position: relative;
+ }
 .padd{
 	height: 57px; 
 	width: auto;
@@ -6,7 +35,7 @@
 
 /*我的主页  内容区*/
 #index{
-	border-left:  1px solid #ccc;
+	/*border-left:  1px solid #ccc;*/
 }
 .ind-head li a{
 	padding: 24px
@@ -15,14 +44,14 @@
 	margin-bottom: 0;
 }
 #wdow{
-	height:800px;
+	/*height:800px;*/
 	overflow:auto;
 	position: relative;
 }
 
 #wdow .wdow-di{
 	margin: 10px auto;
-	width: 80%;
+	width: 90%;
 }
 
 
@@ -71,6 +100,22 @@
 #wdow .wdow-di .wdow-n .wdow-n-strry{
 	padding:5px 10px ;height:100px 
 }
+
+ a.a-sty{
+	width:16px;
+	height:16px;
+	position: absolute;
+	right: 20px;
+	top: 60px;
+	/*z-index: 1;*/
+	background: url('./public/images/bianji02.png');
+}
+
+ a.a-sty:hover{
+	background: url('./public/images/bianji01.png');
+}
+
+
 /*头像  粉丝/关注 绑定*/
 
 

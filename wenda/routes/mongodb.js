@@ -26,7 +26,7 @@ var Schema = mongoose.Schema ;
 
 //个人
 var grSchema = new Schema({
-		GerenID:_id,
+		
 		Name:String,
 		Age:Number,
 		// Gender:String,
