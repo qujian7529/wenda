@@ -81,26 +81,11 @@ var dat=moment(data[0].BirthDay).format('YYYY-MM-DD');
  radio可以用
  ```
 	<label class="checkbox-inline" >
-													    	<input type="radio" name="gender" value="0"  
-													    	<% if(gender == '0'){ %>
-													    		checked="checked" 
-													    	<% } %>
-													    	>保密
-														    </label>
-														    <label class="checkbox-inline" > 
-														    	<input type="radio" name="gender" value="1" 
-														    	<% if(gender == '1'){ %>
-													    			checked="checked" 
-													    		<% } %>
-														    	 >男
-														    </label>
-														    <label class="checkbox-inline" >
-														    	 <input type="radio" name="gender" value="2" 
-														    	<% if(gender == '2'){ %>
-													    			checked="checked" 
-													    		<% } %>
-														    	 >女
-				</label>
+		<input type="radio" name="gender" value="0"  											    <% if(gender == '0'){ %>													    checked="checked" 											    	     <% } %>													    	>保密												   	   </label>
+        <label class="checkbox-inline" > 
+	   <input type="radio" name="gender" value="1" 												<% if(gender == '1'){ %>													    checked="checked" 
+		         <% } %>													    	 >男													 </label>														    <label class="checkbox-inline" >												<input type="radio" name="gender" value="2" 											<% if(gender == '2'){ %>													checked="checked" 												<% } %>	 												                 >女
+	</label>
 ```
 
 
