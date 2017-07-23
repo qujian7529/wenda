@@ -97,4 +97,4 @@ text-hide 图片替换
 8.数据库获取对象的东西时  data时数组  获取时用data[0]
 
 ９．ps -eaf|gr npm　查看进程　sudo kill id 结束进程,如果结束不行　就sudo kill -9 id　杀死　╭（╯＾╰）╮
-
+ 为避免此类情况　结束进程时　按ctrl+alt+c  或是　ctrl+c  尽量不用ctrl+z
