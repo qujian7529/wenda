@@ -14,6 +14,7 @@
 7.input type='data'  type='radio' 在页面上的显示
 8.数据库获取对象
 9.node 某端口被占用，如何结束或杀死
+10.ReactNative err
 # 解决方法
 
 1.将input绝对定位 大小与img相同  隐藏  opacity
@@ -98,3 +99,11 @@ text-hide 图片替换
 
 ９．ps -eaf|gr npm　查看进程　sudo kill id 结束进程,如果结束不行　就sudo kill -9 id　杀死　╭（╯＾╰）╮
  为避免此类情况　结束进程时　按ctrl+alt+c  或是　ctrl+c  尽量不用ctrl+z
+10.项目下执行
+```
+mkdir android/app/src/main/assets
+```
+新建过不需要在建立，执行下面代码后　从编译
+```
+ react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res  
+```
